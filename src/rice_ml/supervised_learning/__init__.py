@@ -1,0 +1,10 @@
+from rice_ml.supervised_learning.linear_regression import LinearRegression
+from rice_ml.supervised_learning.logistic_regression import LogisticRegression
+from rice_ml.supervised_learning.knn import KNNClassifier, KNNRegressor
+from rice_ml.supervised_learning.perceptron import Perceptron
+from rice_ml.supervised_learning.mlp import MLP
+from rice_ml.supervised_learning.decision_tree import DecisionTreeClassifier, DecisionTreeRegressor
+from rice_ml.supervised_learning.random_forest import RandomForestClassifier, RandomForestRegressor
+from rice_ml.supervised_learning.gradient_boosting import GradientBoostingClassifier, GradientBoostingRegressor
+from rice_ml.supervised_learning.svm import SVM
+from rice_ml.supervised_learning.naive_bayes import GaussianNaiveBayes
