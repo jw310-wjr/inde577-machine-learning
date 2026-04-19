@@ -80,9 +80,15 @@ scikit-learn-style API (`fit` / `predict` / `score`) for consistency.
 │       ├── test_knn.py
 │       ├── test_perceptron.py
 │       ├── test_decision_tree.py
+│       ├── test_random_forest.py
+│       ├── test_gradient_boosting.py
+│       ├── test_svm.py
+│       ├── test_naive_bayes.py
+│       ├── test_mlp.py
 │       ├── test_kmeans.py
 │       ├── test_dbscan.py
 │       ├── test_pca.py
+│       ├── test_hierarchical.py
 │       ├── test_preprocessing.py
 │       └── test_metrics.py
 │
@@ -167,12 +173,28 @@ print("RMSE:", model.rmse(X_test_s, y_test))
 pytest
 ```
 
-Tests cover:
-- **Numerical correctness** — e.g., OLS recovers exact coefficients on noiseless data
-- **Input/output shapes** — predictions, transformed arrays, centroids
-- **Edge cases** — all-same-class inputs, single-feature data, noise points in DBSCAN
-- **Consistency** — `fit_predict` vs. `fit` then `predict`
-- **Preprocessing utilities** — mean-centering, unit variance, no train/test overlap
+**113 tests** across 16 test files — one file per algorithm/module:
+
+| File | Algorithm covered |
+|------|------------------|
+| `test_linear_regression.py` | Linear Regression |
+| `test_logistic_regression.py` | Logistic Regression |
+| `test_knn.py` | K-Nearest Neighbors |
+| `test_perceptron.py` | Perceptron |
+| `test_mlp.py` | Multi-Layer Perceptron |
+| `test_decision_tree.py` | Decision Tree |
+| `test_random_forest.py` | Random Forest |
+| `test_gradient_boosting.py` | Gradient Boosting |
+| `test_svm.py` | Support Vector Machine |
+| `test_naive_bayes.py` | Gaussian Naïve Bayes |
+| `test_kmeans.py` | K-Means |
+| `test_dbscan.py` | DBSCAN |
+| `test_pca.py` | PCA |
+| `test_hierarchical.py` | Hierarchical Clustering |
+| `test_preprocessing.py` | StandardScaler, MinMaxScaler, train_test_split |
+| `test_metrics.py` | Evaluation metrics |
+
+Tests cover numerical correctness, input/output shapes, edge cases, reproducibility, and comparisons against scikit-learn baselines.
 
 ---
 
