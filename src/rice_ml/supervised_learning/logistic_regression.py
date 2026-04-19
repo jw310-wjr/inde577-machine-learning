@@ -78,3 +78,16 @@ class LogisticRegression:
     def score(self, X, y):
         """Accuracy on dataset (X, y)."""
         return np.mean(self.predict(X) == np.array(y))
+
+    # ── sklearn-style trailing-underscore aliases ─────────────────────
+    @property
+    def weights_(self):
+        return self.weights
+
+    @property
+    def bias_(self):
+        return self.bias
+
+    @property
+    def loss_history_(self):
+        return self.loss_history

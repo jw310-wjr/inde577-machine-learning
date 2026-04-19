@@ -68,3 +68,12 @@ class Perceptron:
     def score(self, X, y):
         """Accuracy on dataset (X, y)."""
         return np.mean(self.predict(X) == np.array(y))
+
+    # ── sklearn-style aliases ─────────────────────────────────────────
+    @property
+    def weights_(self):
+        return self.weights
+
+    @property
+    def bias_(self):
+        return self.bias

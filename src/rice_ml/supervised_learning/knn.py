@@ -20,9 +20,9 @@ class KNNClassifier:
     distance_metric : str, 'euclidean' | 'manhattan' | 'minkowski' (default 'euclidean')
     """
 
-    def __init__(self, k=5, distance_metric="euclidean"):
+    def __init__(self, k=5, distance_metric="euclidean", distance=None):
         self.k = k
-        self.distance_metric = distance_metric
+        self.distance_metric = distance if distance is not None else distance_metric
         self.X_train = None
         self.y_train = None
 

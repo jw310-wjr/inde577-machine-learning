@@ -20,14 +20,16 @@ class GradientBoostingClassifier:
     learning_rate     : float (default 0.1)
     max_depth         : int   (default 3)
     min_samples_split : int   (default 2)
+    random_state      : int or None (ignored, for API compatibility)
     """
 
     def __init__(self, n_estimators=100, learning_rate=0.1,
-                 max_depth=3, min_samples_split=2):
+                 max_depth=3, min_samples_split=2, random_state=None):
         self.n_estimators = n_estimators
         self.learning_rate = learning_rate
         self.max_depth = max_depth
         self.min_samples_split = min_samples_split
+        self.random_state = random_state
         self.trees = []
         self.initial_pred = None
 
@@ -81,7 +83,7 @@ class GradientBoostingRegressor:
     """
 
     def __init__(self, n_estimators=100, learning_rate=0.1,
-                 max_depth=3, min_samples_split=2):
+                 max_depth=3, min_samples_split=2, random_state=None):
         self.n_estimators = n_estimators
         self.learning_rate = learning_rate
         self.max_depth = max_depth

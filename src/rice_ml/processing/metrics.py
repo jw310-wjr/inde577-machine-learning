@@ -83,20 +83,30 @@ def f1_score(y_true, y_pred, pos_label=1):
     return 2 * p * r / (p + r) if (p + r) > 0 else 0.0
 
 
-def classification_report(y_true, y_pred):
+# Convenience aliases
+mse  = mean_squared_error
+rmse = root_mean_squared_error
+
+
+def classification_report(y_true, y_pred, target_names=None):
     """
     Build a text report showing per-class precision, recall, F1, and support.
+
+    Parameters
+    ----------
+    target_names : list of str, optional — display names for each class label
     """
     y_true, y_pred = np.array(y_true), np.array(y_pred)
     classes = np.unique(y_true)
     header = f"{'Class':>10} {'Precision':>10} {'Recall':>10} {'F1-Score':>10} {'Support':>10}"
     lines = [header, "-" * 55]
-    for c in classes:
+    for idx, c in enumerate(classes):
+        label = target_names[idx] if target_names is not None and idx < len(target_names) else str(c)
         p = precision_score(y_true, y_pred, c)
         r = recall_score(y_true, y_pred, c)
         f1 = f1_score(y_true, y_pred, c)
         support = int(np.sum(y_true == c))
-        lines.append(f"{str(c):>10} {p:>10.4f} {r:>10.4f} {f1:>10.4f} {support:>10}")
+        lines.append(f"{label:>10} {p:>10.4f} {r:>10.4f} {f1:>10.4f} {support:>10}")
     lines.append("-" * 55)
     acc = accuracy_score(y_true, y_pred)
     lines.append(f"{'accuracy':>10} {'':>10} {'':>10} {acc:>10.4f} {len(y_true):>10}")

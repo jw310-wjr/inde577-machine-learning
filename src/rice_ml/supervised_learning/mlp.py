@@ -43,6 +43,10 @@ class MLP:
         self.biases = []
         self.loss_history = []
 
+    @property
+    def loss_history_(self):
+        return self.loss_history
+
     # ── activations ───────────────────────────────────────────────────
 
     @staticmethod

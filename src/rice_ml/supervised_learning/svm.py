@@ -31,6 +31,19 @@ class SVM:
         self.bias = None
         self.loss_history = []
 
+    # ── sklearn-style aliases ─────────────────────────────────────────
+    @property
+    def weights_(self):
+        return self.weights
+
+    @property
+    def bias_(self):
+        return self.bias
+
+    @property
+    def loss_history_(self):
+        return self.loss_history
+
     @staticmethod
     def _to_pm1(y):
         """Convert {0, 1} labels to {-1, +1}."""

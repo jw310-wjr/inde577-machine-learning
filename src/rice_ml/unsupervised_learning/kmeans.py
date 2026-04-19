@@ -30,8 +30,8 @@ class KMeans:
     """
 
     def __init__(self, n_clusters=3, max_iter=300, tol=1e-4,
-                 init="k-means++", random_state=None):
-        self.n_clusters = n_clusters
+                 init="k-means++", random_state=None, k=None):
+        self.n_clusters = k if k is not None else n_clusters
         self.max_iter = max_iter
         self.tol = tol
         self.init = init
