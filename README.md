@@ -67,7 +67,8 @@ scikit-learn-style API (`fit` / `predict` / `score`) for consistency.
 │   │   ├── 07_random_forest.ipynb
 │   │   ├── 08_gradient_boosting.ipynb
 │   │   ├── 09_svm.ipynb
-│   │   └── 10_naive_bayes.ipynb
+│   │   ├── 10_naive_bayes.ipynb
+│   │   └── 16_cross_validation.ipynb
 │   └── unsupervised_learning/
 │       ├── 11_kmeans.ipynb
 │       ├── 12_dbscan.ipynb
