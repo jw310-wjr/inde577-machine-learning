@@ -4,6 +4,7 @@
 **Institution:** Rice University  
 **Course:** INDE 577 / CMOR 438 — Data Science & Machine Learning (Spring 2026)  
 **Instructor:** Randy R. Davila, PhD  
+[![CI](https://github.com/jw310-wjr/inde577-machine-learning/actions/workflows/ci.yml/badge.svg)](https://github.com/jw310-wjr/inde577-machine-learning/actions/workflows/ci.yml)
 
 ---
 
@@ -143,8 +144,8 @@ scikit-learn-style API (`fit` / `predict` / `score`) for consistency.
 ## Installation
 
 ```bash
-git clone <repo-url>
-cd <repo-name>
+git clone https://github.com/jw310-wjr/inde577-machine-learning.git
+cd inde577-machine-learning
 pip install -e ".[dev]"
 ```
 

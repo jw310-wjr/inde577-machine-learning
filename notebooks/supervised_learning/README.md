@@ -18,6 +18,7 @@ This directory contains step-by-step Jupyter Notebook demonstrations for all **1
 | 08 | [08_gradient_boosting.ipynb](08_gradient_boosting.ipynb) | Gradient Boosting (Boosting Ensemble) | Breast Cancer, synthetic regression |
 | 09 | [09_svm.ipynb](09_svm.ipynb) | Support Vector Machine (Soft-Margin, Hinge Loss + SGD) | Breast Cancer, synthetic |
 | 10 | [10_naive_bayes.ipynb](10_naive_bayes.ipynb) | Gaussian Naïve Bayes | Iris, synthetic |
+| 16 | [16_cross_validation.ipynb](16_cross_validation.ipynb) | Cross-Validation (KFold, StratifiedKFold, cross_val_score) | Iris, Breast Cancer, synthetic |
 
 ---
 
@@ -35,6 +36,7 @@ supervised_learning/
 ├── 08_gradient_boosting.ipynb
 ├── 09_svm.ipynb
 ├── 10_naive_bayes.ipynb
+├── 16_cross_validation.ipynb
 ├── figures/                  ← saved plots from notebook runs
 └── README.md
 ```

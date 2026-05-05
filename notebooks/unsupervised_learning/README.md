@@ -12,6 +12,7 @@ This directory contains step-by-step Jupyter Notebook demonstrations for all **4
 | 12 | [12_dbscan.ipynb](12_dbscan.ipynb) | DBSCAN (Density-Based Spatial Clustering) | Synthetic moons/rings, noisy data |
 | 13 | [13_pca.ipynb](13_pca.ipynb) | Principal Component Analysis (Eigendecomposition) | Iris, Digits |
 | 14 | [14_hierarchical.ipynb](14_hierarchical.ipynb) | Hierarchical Clustering (Agglomerative — single/complete/average linkage) | Iris, synthetic |
+| 15 | [15_tsne.ipynb](15_tsne.ipynb) | t-SNE (van der Maaten & Hinton 2008) | Iris, Digits, Breast Cancer |
 
 ---
 
@@ -23,6 +24,7 @@ unsupervised_learning/
 ├── 12_dbscan.ipynb
 ├── 13_pca.ipynb
 ├── 14_hierarchical.ipynb
+├── 15_tsne.ipynb
 ├── figures/                  ← saved plots from notebook runs
 └── README.md
 ```
