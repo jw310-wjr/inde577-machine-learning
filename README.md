@@ -34,7 +34,7 @@ scikit-learn-style API (`fit` / `predict` / `score`) for consistency.
 │   └── rice_ml/
 │       ├── __init__.py
 │       ├── supervised_learning/
-│       │   ├── linear_regression.py    # OLS & Gradient Descent
+│       │   ├── linear_regression.py    # OLS, Gradient Descent, Ridge (L2), Lasso (L1)
 │       │   ├── logistic_regression.py  # Sigmoid + BCE loss
 │       │   ├── knn.py                  # Classifier & Regressor
 │       │   ├── perceptron.py           # Single-layer, step activation
@@ -173,7 +173,7 @@ print("RMSE:", model.rmse(X_test_s, y_test))
 pytest
 ```
 
-**113 tests** across 16 test files — one file per algorithm/module:
+**121 tests** across 16 test files — one file per algorithm/module:
 
 | File | Algorithm covered |
 |------|------------------|
