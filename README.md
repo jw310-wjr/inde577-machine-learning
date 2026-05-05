@@ -75,7 +75,8 @@ scikit-learn-style API (`fit` / `predict` / `score`) for consistency.
 │       ├── 12_dbscan.ipynb
 │       ├── 13_pca.ipynb
 │       ├── 14_hierarchical.ipynb
-│       └── 15_tsne.ipynb
+│       ├── 15_tsne.ipynb
+│       └── 17_autoencoder.ipynb
 │
 ├── tests/
 │   └── unit/
@@ -120,6 +121,7 @@ scikit-learn-style API (`fit` / `predict` / `score`) for consistency.
 | **Gradient Boosting** | `gradient_boosting.py` | Sequential residual fitting; log-loss & MSE |
 | **SVM** | `svm.py` | Soft-margin; hinge loss + L2; SGD |
 | **Naïve Bayes** | `naive_bayes.py` | Gaussian likelihood; multi-class; log-posterior |
+| **CNN (SimpleCNN)** | `cnn.py` | Conv2D + MaxPool2D + Dense; backprop through conv; ReLU; softmax |
 
 ### Unsupervised Learning
 
@@ -130,6 +132,7 @@ scikit-learn-style API (`fit` / `predict` / `score`) for consistency.
 | **PCA** | `pca.py` | Eigendecomposition; explained variance ratio; inverse transform |
 | **Hierarchical** | `hierarchical.py` | Agglomerative; single / complete / average / Ward linkage |
 | **t-SNE** | `tsne.py` | Perplexity binary search; Student-t kernel; momentum GD; early exaggeration |
+| **Autoencoder** | `autoencoder.py` | Encoder–decoder; MSE reconstruction loss; Adam optimizer; anomaly detection |
 
 ### Processing & Utilities
 
@@ -179,7 +182,7 @@ print("RMSE:", model.rmse(X_test_s, y_test))
 pytest
 ```
 
-**147 tests** across 20 test files — one file per algorithm/module:
+**164 tests** across 20 test files — one file per algorithm/module:
 
 | File | Algorithm covered |
 |------|------------------|
@@ -197,6 +200,8 @@ pytest
 | `test_dbscan.py` | DBSCAN |
 | `test_pca.py` | PCA |
 | `test_tsne.py` | t-SNE |
+| `test_autoencoder.py` | Autoencoder |
+| `test_cnn.py` | CNN (SimpleCNN) |
 | `test_cross_validation.py` | KFold, StratifiedKFold, cross_val_score |
 | `test_hierarchical.py` | Hierarchical Clustering |
 | `test_preprocessing.py` | StandardScaler, MinMaxScaler, train_test_split |

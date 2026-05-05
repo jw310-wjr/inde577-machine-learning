@@ -1,6 +1,6 @@
 # Supervised Learning Notebooks
 
-This directory contains step-by-step Jupyter Notebook demonstrations for all **10 supervised learning algorithms** implemented in the `rice_ml` package.
+This directory contains step-by-step Jupyter Notebook demonstrations for all **12 supervised learning algorithms** implemented in the `rice_ml` package.
 
 ---
 
@@ -18,6 +18,7 @@ This directory contains step-by-step Jupyter Notebook demonstrations for all **1
 | 08 | [08_gradient_boosting.ipynb](08_gradient_boosting.ipynb) | Gradient Boosting (Boosting Ensemble) | Breast Cancer, synthetic regression |
 | 09 | [09_svm.ipynb](09_svm.ipynb) | Support Vector Machine (Soft-Margin, Hinge Loss + SGD) | Breast Cancer, synthetic |
 | 10 | [10_naive_bayes.ipynb](10_naive_bayes.ipynb) | Gaussian Naïve Bayes | Iris, synthetic |
+| 17 | [17_cnn.ipynb](17_cnn.ipynb) | CNN (SimpleCNN — Conv2D, MaxPool2D, Dense) | Digits 8×8 — multi-class image classification |
 | 16 | [16_cross_validation.ipynb](16_cross_validation.ipynb) | Cross-Validation (KFold, StratifiedKFold, cross_val_score) | Iris, Breast Cancer, synthetic |
 
 ---

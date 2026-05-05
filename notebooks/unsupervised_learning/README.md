@@ -1,6 +1,6 @@
 # Unsupervised Learning Notebooks
 
-This directory contains step-by-step Jupyter Notebook demonstrations for all **4 unsupervised learning algorithms** implemented in the `rice_ml` package.
+This directory contains step-by-step Jupyter Notebook demonstrations for all **5 unsupervised learning algorithms** implemented in the `rice_ml` package.
 
 ---
 
@@ -13,6 +13,7 @@ This directory contains step-by-step Jupyter Notebook demonstrations for all **4
 | 13 | [13_pca.ipynb](13_pca.ipynb) | Principal Component Analysis (Eigendecomposition) | Iris, Digits |
 | 14 | [14_hierarchical.ipynb](14_hierarchical.ipynb) | Hierarchical Clustering (Agglomerative — single/complete/average linkage) | Iris, synthetic |
 | 15 | [15_tsne.ipynb](15_tsne.ipynb) | t-SNE (van der Maaten & Hinton 2008) | Iris, Digits, Breast Cancer |
+| 17 | [17_autoencoder.ipynb](17_autoencoder.ipynb) | Autoencoder (encoder–decoder, MSE loss) | Iris, Digits — compression & anomaly detection |
 
 ---
 

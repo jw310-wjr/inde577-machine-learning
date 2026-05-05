@@ -3,3 +3,4 @@ from rice_ml.unsupervised_learning.dbscan import DBSCAN
 from rice_ml.unsupervised_learning.pca import PCA
 from rice_ml.unsupervised_learning.hierarchical import HierarchicalClustering
 from rice_ml.unsupervised_learning.tsne import TSNE
+from rice_ml.unsupervised_learning.autoencoder import Autoencoder

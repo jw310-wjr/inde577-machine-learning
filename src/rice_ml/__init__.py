@@ -18,16 +18,16 @@ from rice_ml.supervised_learning.random_forest import RandomForestClassifier, Ra
 from rice_ml.supervised_learning.gradient_boosting import GradientBoostingClassifier, GradientBoostingRegressor
 from rice_ml.supervised_learning.svm import SVM
 from rice_ml.supervised_learning.naive_bayes import GaussianNaiveBayes
+from rice_ml.supervised_learning.cnn import SimpleCNN, Conv2D, MaxPool2D
+
 from rice_ml.unsupervised_learning.kmeans import KMeans
 from rice_ml.unsupervised_learning.dbscan import DBSCAN
 from rice_ml.unsupervised_learning.pca import PCA
 from rice_ml.unsupervised_learning.hierarchical import HierarchicalClustering
 from rice_ml.unsupervised_learning.tsne import TSNE
-from rice_ml.unsupervised_learning.tsne import TSNE
-from rice_ml.unsupervised_learning.tsne import TSNE
+from rice_ml.unsupervised_learning.autoencoder import Autoencoder
+
 from rice_ml.processing.preprocessing import StandardScaler, MinMaxScaler, train_test_split
-from rice_ml.processing.cross_validation import KFold, StratifiedKFold, cross_val_score
-from rice_ml.processing.cross_validation import KFold, StratifiedKFold, cross_val_score
 from rice_ml.processing.cross_validation import KFold, StratifiedKFold, cross_val_score
 from rice_ml.processing.metrics import (
     accuracy_score, mean_squared_error, root_mean_squared_error,

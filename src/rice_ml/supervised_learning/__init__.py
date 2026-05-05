@@ -10,3 +10,4 @@ from rice_ml.supervised_learning.random_forest import RandomForestClassifier, Ra
 from rice_ml.supervised_learning.gradient_boosting import GradientBoostingClassifier, GradientBoostingRegressor
 from rice_ml.supervised_learning.svm import SVM
 from rice_ml.supervised_learning.naive_bayes import GaussianNaiveBayes
+from rice_ml.supervised_learning.cnn import SimpleCNN, Conv2D, MaxPool2D
