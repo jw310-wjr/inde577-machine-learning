@@ -106,9 +106,9 @@ def test_cross_val_score_neg_rmse():
     y = X @ [1.0, 1.0]
     scores = cross_val_score(LinearRegression(method='ols'), X, y, cv=3, scoring='neg_rmse')
     assert all(s <= 0 for s in scores)
-    # neg_rmse should be between neg_mse and 0 for unit-scale data
+    # |neg_rmse| = sqrt(|neg_mse|), so neg_rmse is always >= neg_mse (less negative)
     mse_scores = cross_val_score(LinearRegression(method='ols'), X, y, cv=3, scoring='neg_mse')
-    assert all(r >= m for r, m in zip(scores, mse_scores))
+    assert all(abs(r) <= abs(m) for r, m in zip(scores, mse_scores))
 
 
 def test_cross_val_score_custom_cv():
