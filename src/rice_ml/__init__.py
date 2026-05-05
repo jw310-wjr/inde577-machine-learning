@@ -20,7 +20,13 @@ from rice_ml.unsupervised_learning.kmeans import KMeans
 from rice_ml.unsupervised_learning.dbscan import DBSCAN
 from rice_ml.unsupervised_learning.pca import PCA
 from rice_ml.unsupervised_learning.hierarchical import HierarchicalClustering
+from rice_ml.unsupervised_learning.tsne import TSNE
+from rice_ml.unsupervised_learning.tsne import TSNE
+from rice_ml.unsupervised_learning.tsne import TSNE
 from rice_ml.processing.preprocessing import StandardScaler, MinMaxScaler, train_test_split
+from rice_ml.processing.cross_validation import KFold, StratifiedKFold, cross_val_score
+from rice_ml.processing.cross_validation import KFold, StratifiedKFold, cross_val_score
+from rice_ml.processing.cross_validation import KFold, StratifiedKFold, cross_val_score
 from rice_ml.processing.metrics import (
     accuracy_score, mean_squared_error, root_mean_squared_error,
     mean_absolute_error, r2_score, confusion_matrix,

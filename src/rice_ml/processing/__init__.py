@@ -1,4 +1,5 @@
 from rice_ml.processing.preprocessing import StandardScaler, MinMaxScaler, train_test_split
+from rice_ml.processing.cross_validation import KFold, StratifiedKFold, cross_val_score
 from rice_ml.processing.metrics import (
     accuracy_score, mean_squared_error, root_mean_squared_error,
     mean_absolute_error, r2_score, confusion_matrix,
