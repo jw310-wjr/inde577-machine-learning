@@ -4,7 +4,9 @@ rice_ml: A custom machine learning library for INDE 577 / CMOR 438.
 Built from scratch using NumPy to emphasize algorithmic transparency.
 """
 
-from rice_ml.supervised_learning.linear_regression import LinearRegression
+from rice_ml.supervised_learning.linear_regression import (
+    LinearRegression, RidgeRegression, LassoRegression
+)
 from rice_ml.supervised_learning.logistic_regression import LogisticRegression
 from rice_ml.supervised_learning.knn import KNNClassifier, KNNRegressor
 from rice_ml.supervised_learning.perceptron import Perceptron
