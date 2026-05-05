@@ -73,9 +73,8 @@ scikit-learn-style API (`fit` / `predict` / `score`) for consistency.
 │       ├── 11_kmeans.ipynb
 │       ├── 12_dbscan.ipynb
 │       ├── 13_pca.ipynb
-│       └── 14_hierarchical.ipynb
-│       ├── 15_tsne.ipynb
-│       └── 16_cross_validation.ipynb
+│       ├── 14_hierarchical.ipynb
+│       └── 15_tsne.ipynb
 │
 ├── tests/
 │   └── unit/
@@ -129,11 +128,13 @@ scikit-learn-style API (`fit` / `predict` / `score`) for consistency.
 | **DBSCAN** | `dbscan.py` | Arbitrary shapes; noise detection; core points |
 | **PCA** | `pca.py` | Eigendecomposition; explained variance ratio; inverse transform |
 | **Hierarchical** | `hierarchical.py` | Agglomerative; single / complete / average / Ward linkage |
+| **t-SNE** | `tsne.py` | Perplexity binary search; Student-t kernel; momentum GD; early exaggeration |
 
 ### Processing & Utilities
 
 | Module | Contents |
 |--------|---------|
+| `cross_validation.py` | `KFold`, `StratifiedKFold`, `cross_val_score` |
 | `preprocessing.py` | `StandardScaler`, `MinMaxScaler`, `train_test_split` |
 | `metrics.py` | `accuracy_score`, `mse`, `rmse`, `mae`, `r2_score`, `confusion_matrix`, `precision_score`, `recall_score`, `f1_score`, `classification_report` |
 
@@ -177,7 +178,7 @@ print("RMSE:", model.rmse(X_test_s, y_test))
 pytest
 ```
 
-**143 tests** across 16 test files — one file per algorithm/module:
+**147 tests** across 20 test files — one file per algorithm/module:
 
 | File | Algorithm covered |
 |------|------------------|
@@ -193,8 +194,9 @@ pytest
 | `test_naive_bayes.py` | Gaussian Naïve Bayes |
 | `test_kmeans.py` | K-Means |
 | `test_dbscan.py` | DBSCAN |
-| `test_pca.py` | t-SNE | `unsupervised_learning/tsne.py` | [`15_tsne.ipynb`](notebooks/unsupervised_learning/15_tsne.ipynb) |
-| PCA |
+| `test_pca.py` | PCA |
+| `test_tsne.py` | t-SNE |
+| `test_cross_validation.py` | KFold, StratifiedKFold, cross_val_score |
 | `test_hierarchical.py` | Hierarchical Clustering |
 | `test_preprocessing.py` | StandardScaler, MinMaxScaler, train_test_split |
 | `test_metrics.py` | Evaluation metrics |

@@ -9,6 +9,8 @@ from rice_ml.supervised_learning.linear_regression import (
 )
 from rice_ml.supervised_learning.logistic_regression import LogisticRegression
 from rice_ml.supervised_learning.knn import KNNClassifier, KNNRegressor
+KNeighborsClassifier = KNNClassifier
+KNeighborsRegressor  = KNNRegressor
 from rice_ml.supervised_learning.perceptron import Perceptron
 from rice_ml.supervised_learning.mlp import MLP
 from rice_ml.supervised_learning.decision_tree import DecisionTreeClassifier, DecisionTreeRegressor
