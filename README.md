@@ -106,7 +106,7 @@ scikit-learn-style API (`fit` / `predict` / `score`) for consistency.
 
 | Algorithm | Module | Key Features |
 |-----------|--------|-------------|
-| **Linear Regression** | `linear_regression.py` | OLS closed-form + gradient descent; RMSE, R² |
+| **Linear Regression** | `linear_regression.py` | OLS closed-form + gradient descent; Ridge (L2) + Lasso (L1) regularisation; RMSE, R² |
 | **Logistic Regression** | `logistic_regression.py` | Sigmoid + binary cross-entropy; L2 regularization |
 | **K-Nearest Neighbors** | `knn.py` | Euclidean / Manhattan / Minkowski; classifier & regressor |
 | **Perceptron** | `perceptron.py` | Online learning; step activation; convergence theorem |

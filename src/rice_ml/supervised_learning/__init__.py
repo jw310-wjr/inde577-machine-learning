@@ -1,4 +1,6 @@
-from rice_ml.supervised_learning.linear_regression import LinearRegression
+from rice_ml.supervised_learning.linear_regression import (
+    LinearRegression, RidgeRegression, LassoRegression
+)
 from rice_ml.supervised_learning.logistic_regression import LogisticRegression
 from rice_ml.supervised_learning.knn import KNNClassifier, KNNRegressor
 from rice_ml.supervised_learning.perceptron import Perceptron
