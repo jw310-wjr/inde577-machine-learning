@@ -53,7 +53,7 @@ scikit-learn-style API (`fit` / `predict` / `score`) for consistency.
 │       │
 │       └── processing/
 │           ├── preprocessing.py        # StandardScaler, MinMaxScaler, train_test_split
-| Cross-Validation | `processing/cross_validation.py` | `16_cross_validation.ipynb` |
+│           ├── cross_validation.py  # KFold, StratifiedKFold, cross_val_score
 │           └── metrics.py              # accuracy, MSE, RMSE, R², F1, confusion matrix
 │
 ├── notebooks/
@@ -73,7 +73,8 @@ scikit-learn-style API (`fit` / `predict` / `score`) for consistency.
 │       ├── 12_dbscan.ipynb
 │       ├── 13_pca.ipynb
 │       └── 14_hierarchical.ipynb
-15_tsne.ipynb - t-SNE│15_tsne.ipynb - t-SNE 15_tsne.ipynb - t-SNE 15_tsne.ipynb - t-SNE 15_tsne.ipynb - t-SNE 15_tsne.ipynb - t-SNE 15_tsne.ipynb - t-SNE 15_tsne.ipynb - t-SNE 15_tsne.ipynb - t-SNE└15_tsne.ipynb - t-SNE─15_tsne.ipynb - t-SNE─15_tsne.ipynb - t-SNE 15_tsne.ipynb - t-SNE115_tsne.ipynb - t-SNE515_tsne.ipynb - t-SNE_15_tsne.ipynb - t-SNEh15_tsne.ipynb - t-SNEi15_tsne.ipynb - t-SNEe15_tsne.ipynb - t-SNEr15_tsne.ipynb - t-SNEa15_tsne.ipynb - t-SNEr15_tsne.ipynb - t-SNEc15_tsne.ipynb - t-SNEh15_tsne.ipynb - t-SNEi15_tsne.ipynb - t-SNEc15_tsne.ipynb - t-SNEa15_tsne.ipynb - t-SNEl15_tsne.ipynb - t-SNE.15_tsne.ipynb - t-SNEi15_tsne.ipynb - t-SNEp15_tsne.ipynb - t-SNEy15_tsne.ipynb - t-SNEn15_tsne.ipynb - t-SNEb15_tsne.ipynb - t-SNE
+│       ├── 15_tsne.ipynb
+│       └── 16_cross_validation.ipynb
 │
 ├── tests/
 │   └── unit/
@@ -191,7 +192,8 @@ pytest
 | `test_naive_bayes.py` | Gaussian Naïve Bayes |
 | `test_kmeans.py` | K-Means |
 | `test_dbscan.py` | DBSCAN |
-| `test_pca.py` | PCA |
+| `test_pca.py` | t-SNE | `unsupervised_learning/tsne.py` | [`15_tsne.ipynb`](notebooks/unsupervised_learning/15_tsne.ipynb) |
+| PCA |
 | `test_hierarchical.py` | Hierarchical Clustering |
 | `test_preprocessing.py` | StandardScaler, MinMaxScaler, train_test_split |
 | `test_metrics.py` | Evaluation metrics |
